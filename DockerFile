@@ -1,4 +1,5 @@
 FROM python:3.11
+FROM php
 WORKDIR /bot
 
 # 更新・日本語化
