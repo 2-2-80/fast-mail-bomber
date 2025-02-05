@@ -1,5 +1,6 @@
 # PHP + Apache の公式イメージを使用
 FROM php:8.2-apache
+RUN php -v
 
 # 必要な PHP 拡張モジュールをインストール
 RUN apt-get update && apt-get install -y python3 python3-pip locales
