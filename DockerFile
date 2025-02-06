@@ -1,10 +1,16 @@
 # PHP + Apache の公式イメージを使用
 FROM php:8.2-apache
 RUN php -v
-RUN apt-get install -y php-cli php-mbstring php-xml php-curl
+# パッケージリストを更新し、必要なシステムパッケージをインストール
+RUN apt-get update && apt-get install -y \
+    unzip \
+    curl \
+    libxml2-dev \
+    libcurl4-openssl-dev \
+    && rm -rf /var/lib/apt/lists/*
 
 # 必要な PHP 拡張モジュールをインストール
-RUN apt-get update && apt-get install -y php-cli php-mbstring php-xml php-curl
+RUN docker-php-ext-install mbstring xml curl
 
 # Python 環境を統一
 RUN ln -s /usr/bin/python3 /usr/bin/python
