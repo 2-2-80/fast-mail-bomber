@@ -3901,5 +3901,9 @@
     "http://mailman3.rfc-editor.org/mailman/listinfo",
     "http://newton.stat.columbia.edu/mailman/listinfo",
     "http://mailman.rice.edu/mailman/listinfo",
-    "https://lists.wikimedia.org/postorius/lists/"
+    "http://lists.uni-bielefeld.de/mailman/listinfo",
+    "http://list.serv.uni-osnabrueck.de/mailman/listinfo",
+    "https://dlist.server.uni-frankfurt.de/mailman/admin",
+    "https://lists.uni-wuerzburg.de/mailman/admin",
+    "http://isspmail.issp.u-tokyo.ac.jp/mailman/listinfo"
 ]
