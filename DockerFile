@@ -34,7 +34,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # ポート開放
-EXPOSE 80
+EXPOSE 8080
 
 # 実行（仮想環境を使用）
 CMD ["python", "main.py"]
